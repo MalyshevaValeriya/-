@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: #ffffff;
+ 
+ }
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 27px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.header-top a,
+.site-navigation a {
+  color: #ffffff;
+}
+
+.header-top a:hover {
+  background-color: #212a3a;
+}
+
+.header-top a:focus {
+  background-color: #161d29;
+}
+
+.logo {
+  display: block;
+  padding: 13px 0;
+  margin-bottom: 5px;
+  width: 220px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ee3643;
+  box-shadow: 0px 5px 0px 0px #b52933;
+} 
+
+.main-header .logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-header .logo:focus {
+  background-color: #ba2732;
+} 
+
+.main-header input[type="search"] {
+  font: inherit;
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+ 
+.main-header input:hover {
+  background-color: #212a3a;
+}
+
+.main-header input:focus {
+  background-color: #ffffff;
+}
+
+.main-header .order {
+  display: block; 
+  padding: 14px 0 ;
+  width: 150px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #63a63e;
+}
+
+.main-header .order:focus {
+  background-color: #518534;	
+}
+
+.main-header .order:hover {
+  background-color: #5fbb2d;	
+}
+
+.header-middle {
+  background-color: #f3f7f9;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+
+.header-contacts a {
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.header-contacts address {
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;	
+  color: #32425c;
+}
+
+.user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  list-style: none;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus {
+  background-color: #1d2739;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1d2739;
+}
+
+.info {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+  color: #000000;
+}
+
+.transport-companies {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.footer-top .logo {
+  color: #ffffff;
+}
+
+.main-footer  {
+  background-color: #32425c;
+}
+
+.footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffd180;
+  
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.btn {
+  color: #ffd180; 
+}
+
+legend {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.filter-option {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style: none;
+}
+
+.filter-button ul {
+  font-family: "PT Sans";
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;  
+}
+
+.tool-item {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.old-price {
+  font-family: "PT Sans";
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.new-price a {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
+.buy {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #63a63e;
+  border: none;
+}
+
+.bookmark {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
