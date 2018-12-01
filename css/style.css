@@ -37,11 +37,11 @@ a {
   color: #ffffff;
 }
 
-.header-top a:hover {
+.main-navigation a:hover {
   background-color: #212a3a;
 }
 
-.header-top a:active {
+.main-navigation a:active {
   background-color: #161d29;
 }
 
