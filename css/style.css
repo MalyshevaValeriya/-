@@ -41,7 +41,7 @@ a {
   background-color: #212a3a;
 }
 
-.header-top a:focus {
+.header-top a:active {
   background-color: #161d29;
 }
 
@@ -59,11 +59,11 @@ a {
   box-shadow: 0px 5px 0px 0px #b52933;
 } 
 
-.main-header .logo:hover {
+.logo:hover {
   background-color: #ca2c37;
 }
 
-.main-header .logo:focus {
+.logo:active {
   background-color: #ba2732;
 } 
 
@@ -78,7 +78,7 @@ a {
   background-color: #212a3a;
 }
 
-.main-header input:focus {
+.main-header input:active {
   background-color: #ffffff;
 }
 
@@ -92,7 +92,7 @@ a {
   background-color: #63a63e;
 }
 
-.main-header .order:focus {
+.main-header .order:active {
   background-color: #518534;	
 }
 
@@ -145,7 +145,7 @@ h1 {
   background-color: #293449;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   background-color: #1d2739;
 }
 
@@ -176,6 +176,15 @@ h2 {
 .main-footer  {
   background-color: #32425c;
 }
+.footer-bottom .site-navigation a:hover {
+  text-decoration: underline;
+  background-color: #32425c;
+}
+
+.footer-bottom .site-navigation a:active {
+   text-decoration: none;
+  color: rgba(241,245, 247, 0.5);
+}
 
 .footer-navigation a {
   font-size: 18px;
@@ -183,6 +192,15 @@ h2 {
   text-decoration: none;
   color: #ffd180;
   
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  text-decoration: none;
+  color: rgba(255,209, 128, 0.5);  
 }
 
 .footer-navigation {
@@ -202,6 +220,11 @@ h2 {
   color: #ffffff;
 }
 
+.social-button:hover,
+.social-button:active {
+  background-color: #ee3643;
+}
+
 .footer-copyright {
   font-size: 16px;
   line-height: 18px;
@@ -214,7 +237,7 @@ h2 {
 }
 
 legend {
-  font-family: "PT Sans";
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -222,7 +245,7 @@ legend {
 }
 
 .filter-option {
-  font-family: "PT Sans";
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -231,7 +254,7 @@ legend {
 }
 
 .filter-button ul {
-  font-family: "PT Sans";
+  font-family:  "PT Sans", "Arial", sans-serif;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -249,13 +272,13 @@ legend {
 }
 
 .old-price {
-  font-family: "PT Sans";
+  font-family:  "PT Sans", "Arial", sans-serif;
   text-decoration: line-through;
   color: #999999;
 }
 
 .new-price a {
-  font-family: "PT Sans";
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
