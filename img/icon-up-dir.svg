@@ -1,1 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+<div class="promo-slider">
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <div class="slider-promo-controls">
+              <label for="product-1">Первый</label>
+              <label for="product-2">Второй</label>
+            </div>
+            <div class="promo-slider-arrow">
+              <button type="button" class="promo-arrow-button right"></button>
+              <button type="button" class="promo-arrow-button left"></button>
+            </div>
+            <ul class="promo-slider-list">
+              <li class="promo-slider-item slide" id="slide1">
+                <img class="slider-image" src="img/icon-slider-perforators.jpg" width="620" height="266">
+                <h3 class="skide-title">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button slide-button" href="catalog.html">Открыть каталог</a>
+              </li>
+               <li class="promo-slider-item slide" id="slide2">
+                <img class="slider-image" src="img/icon-slider-tool.jpg" width="620" height="266">
+                <h3 class="skide-title">Дрели</h3>
+                <p>Соседям на радость</p>
+                <a class="button slide-button" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+          </div>

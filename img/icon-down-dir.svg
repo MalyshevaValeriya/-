@@ -1,1 +1,136 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+
+.user-account {
+  white-space: nowrap;
+  width: 280px;
+  margin-left: 69px;
+  margin-top: 56px;
+  background-color: #ffffff;
+}
+
+.profile {
+  position: relative;
+  padding: 0;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  margin-right: 10px;
+}
+.background_copy_2 {
+  background-image: url("background copy 2.png");
+  position: absolute;
+  left: 386px;
+  top: 2399px;
+  width: 269px;
+  height: 194px;
+  z-index: 170;
+}
+.background_copy_2 {
+  background-image: url("background copy 2.png");
+  position: absolute;
+  left: 386px;
+  top: 2399px;
+  width: 269px;
+  height: 194px;
+  z-index: 170;
+}
+
+
+.site-navigation a {
+  display: block;
+  vertical-align: middle;
+  padding-left: 35px;
+  padding-right: 33px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+
+
+
+
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.site-navigation a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.header-bottom .site-navigation {
+  max-width: 940px;
+  box-shadow: 0px 5px 0px 0px #293449;
+
+}
+
+.site-navigation a {
+  display: block;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation:first-child a {
+  margin-left: 52px;
+}
+
+.site-navigation-contacts {
+  margin-right: 54px;
+}
+
+
+.site-navigation li:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+.header-bottom {
+  width: 940px;
+  margin: auto;
+}
+
+.header-bottom .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #32425c;
+  box-shadow: 0px 5px 0px 0px #293449;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 19px 30px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+
+.site-navigation:first-child a {
+  margin-left: 52px;
+}
