@@ -1,16 +1,23 @@
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 }
 
-  
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+}
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -18,14 +25,41 @@
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -36,9 +70,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: #ffffff;
  }
 
@@ -90,8 +124,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   width: 940px;
+  margin: auto;
 }
 
 .header-top a,
@@ -149,7 +183,6 @@ img {
 .header-top-search:hover {
   background-color: #212a3a;
 }
-
 
 .header-top-search:focus {
   color: #000000;
@@ -286,12 +319,12 @@ img {
 
 h1 {
   width: 200px;
-  padding-top: 38px;
-  font-weight: 400;
   margin-left: 52px;
+  padding-top: 38px;
+  font-style: italic;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  font-style: italic;
   color: #ee3643;
 }
 
@@ -305,9 +338,9 @@ h1 {
   margin-left: 66px;
   padding-top: 11px;
   padding-left: 12px;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  font-style: normal;
   font-weight: 500; 
   color: #32425c;
 }
@@ -334,20 +367,20 @@ h1 {
 }
 
 .user-navigation {
-  white-space: nowrap;
   width: 280px;
   margin-left: 68px;
   margin-top: 59px;
+  white-space: nowrap;
 }
 
 .login-link {
   position: relative;
+  margin-right: 9px;
   padding: 12px 22px 12px 49px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  margin-right: 9px;
 }
 
 .login-link::before {
@@ -402,9 +435,9 @@ h1 {
 }
 
 .user-account {
+  width: 299px;
   margin-top: 45px;
   margin-left: 50px;
-  width: 299px;
 }
 
 .user-profile {
@@ -499,8 +532,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- 
- justify-content: space-between;
+ -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
@@ -554,8 +588,6 @@ h1 {
 
 .promo-block {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 59px;
 }
 
@@ -597,7 +629,6 @@ h1 {
   position: relative;
   display: block;
   width: 135px;
-  
   margin-left: 4px;
   margin-top: 12px;
   padding-top: 11px;
@@ -700,9 +731,9 @@ h1 {
 
 .slider-item h3 {
   max-width: 600px;
+  margin: 0;
   padding-top: 24px;
   padding-left: 25px;
-  margin: 0;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -761,7 +792,6 @@ h1 {
   cursor: pointer;
   background-color: #ffffff;
 }
-
 
 #product-1:checked ~ .promo-slider-list .slider-item:nth-child(1) {
   display: block;
@@ -917,28 +947,28 @@ h1 {
   color: #000000;
 }
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
-  display: block;
+.actions .buy,
+.actions .bookmark {
   position: relative;
+  display: block;
   width: 135px;
   margin: 0 auto;
   margin-bottom: 8px;
   padding: 7px 0;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315; 
-  background-color: #63a63e;
   color: white;
   font-size: 14px;
   font-weight: normal;
   font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-decoration: none;
-  text-transform: uppercase;    
+  text-transform: uppercase; 
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;    
   border-radius: 3px;
 }
 
-.catalog-item .actions .bookmark {
+.actions .bookmark {
   color: #32425c;
   background: #ffffff;
   border-bottom-color: #63a63e;
@@ -1052,30 +1082,41 @@ h1 {
       flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 60px;
+  margin-top: 52px;
   list-style: none;
 }
-
 
 .pagination-item:last-child {
   margin-right: 0;
 }
 
 .pagination-item a {
-  margin-right: 8px;
-  padding: 9px 15px;
+  display: inline-block;
+  padding: 8px 14px 10px 16px;
+  margin-right: 9px;
+  vertical-align: middle;
+  text-align: center;
   border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border-radius: 3px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
 }
 
-.pagination-list .next {
-  width: 140px;
-  padding-left: 30px;
+.next a {
+  display: inline-block;
+  padding: 9px 31px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .pagination-item-current a {
@@ -1083,7 +1124,6 @@ h1 {
   background-color: #ee3643;
   border-radius: 4px;
 }
-
 
 .pagination-item a:hover {
   border: 1px solid #bdc6ca;
@@ -1097,19 +1137,19 @@ h1 {
 
 .perforators-info {
   width: 100%;
-  background-color: #f2f6f8;
   margin-top: 60px;
- 
+  padding-bottom: 55px;
+  background-color: #f2f6f8;
 }
+
 .perforators-info-wrapper {
   width: 940px;
   margin: auto;
   background-color: #f2f6f8;
 }
 
-.perforators-info {
-  padding-top: 60px;
-  padding-bottom: 70px;
+.perforators-info h2 {
+  padding-top: 66px;  
 }
 
 .perforators-info p {
@@ -1140,10 +1180,12 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   margin-bottom: 86px; 
+  padding: 0;
   list-style: none;
 }
 
@@ -1159,7 +1201,7 @@ h1 {
           align-items: center;
   width: 218px;
   height: 143px;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-right: 20px;
   border: 1px solid #eaeaea;
 }
@@ -1172,6 +1214,10 @@ h1 {
 
 .brands .brands-items:nth-child(4n) {
   margin-right: 0;
+}
+
+.brands-image:active {
+  opacity: 0.3
 }
 
 /*слайдер сервисы */
@@ -1310,7 +1356,6 @@ h1 {
   background-repeat: no-repeat;
 }
 
-
 .warranty-info {
   padding-right: 240px;
   font-size: 13px;
@@ -1370,10 +1415,9 @@ h1 {
           justify-content: space-between;
   width: 940px;
   margin: auto;
-  margin-top: 56px;
-  padding: 0;
+  margin-top: 54px;
   margin-bottom: 86px;
-  
+  padding: 0;
 }
 
 .company {
@@ -1424,8 +1468,8 @@ h2 {
 }
 
 .transport-companies {
-  padding-left: 36px;
   margin-top: 20px;
+  padding-left: 36px;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
@@ -1496,13 +1540,13 @@ h2 {
 }
 
 .breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  position: relative;
-  margin-right: 40px;
 }
 
 .breadcrumbs li::after {
@@ -1575,8 +1619,8 @@ h2 {
 }
 
 .filter fieldset {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -1638,8 +1682,8 @@ h2 {
 
 .price-controls label {
   display: inline-block;
-  vertical-align: middle;
   width: 95px;
+  vertical-align: middle;
   font-size: 17px;
   line-height: 18px;
 }
@@ -1689,7 +1733,6 @@ h2 {
   font-size: 17px;
   line-height: 18px;
 }
-
 
 .filter-option label {
   position: relative;
@@ -1745,8 +1788,8 @@ h2 {
 }
 
 .filter-button {
-  padding: 10px 38px 8px;
   margin-top: 60px;
+  padding: 10px 38px 8px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1897,7 +1940,7 @@ h2 {
   display: block;
   padding-top: 21px;
   padding-bottom: 19px;
-  padding-right: 30px;
+  padding-right: 32px;
   padding-left: 30px;
   text-align: center;
   font-size: 17px;
@@ -1920,7 +1963,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 19px;
   padding: 0;
   list-style: none;
 }
@@ -1980,7 +2023,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 21px;
+  padding-top: 23px;
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
@@ -2078,11 +2121,13 @@ h2 {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-write-us {
@@ -2099,8 +2144,6 @@ h2 {
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
-
-
 
 .write-us-wrapper {
   display: -webkit-box;

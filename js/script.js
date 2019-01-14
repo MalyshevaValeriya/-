@@ -59,8 +59,8 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value || !userMessage) {
     evt.preventDefault();
-  popup.classList.remove("modal-error");
-  popup.classList.add("modal-error");
+    popup.classList.remove("modal-error");
+    popup.classList.add("modal-error");
 }
   });
 
