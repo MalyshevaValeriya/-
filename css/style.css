@@ -95,7 +95,6 @@ body {
   background-color: #ba2732;
 }
 
-.visually-hidden {
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -106,7 +105,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -623,9 +623,16 @@ img {
 
 .promo-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 123px;
   min-width: 280px;
   padding-left: 20px;
@@ -1411,7 +1418,7 @@ img {
 }
 
 .credit-info {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1794,7 +1801,7 @@ h2 {
   top: -2px;
   width: 36px;
   height: 23px;
-  opacity: 1;
+  opacity: 0.8;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
@@ -2110,7 +2117,8 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 132px;
   margin: 0;
   padding: 0;
@@ -2393,9 +2401,9 @@ padding-left: 82px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 37px;
-  padding-bottom: 37px;
-  padding-left: 80px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 79px;
   padding-right: 80px;
   background-color: #f1f1f1;
 }
